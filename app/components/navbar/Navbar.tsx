@@ -2,14 +2,21 @@
 
 import { navLinks } from '@/app/constants';
 import { close, logo, menu } from '@/public/assets';
+import { User } from '@prisma/client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import Container from '../Container';
 import UserMenu from './UserMenu';
 
-const Navbar = () => {
+interface NavBarProps {
+	currentUser?: User | null;
+}
+
+const Navbar: React.FC<NavBarProps> = ({ currentUser }) => {
 	const [toggle, setToggle] = useState(false);
+
+	console.log({ currentUser });
 
 	return (
 		<header>
@@ -50,7 +57,7 @@ const Navbar = () => {
 						))}
 					</ul>
 
-					<UserMenu />
+					<UserMenu currentUser={currentUser} />
 					<div>
 						{/* <div className="text-xl">
               <RiShoppingCartLine />

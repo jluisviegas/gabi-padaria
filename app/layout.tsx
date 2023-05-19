@@ -1,6 +1,7 @@
 import LoginModal from '@/app/components/modals/LoginModal';
 import RegisterModal from '@/app/components/modals/RegisterModal';
 import localFont from 'next/font/local';
+import getCurrentUser from './actions/getCurrentUser';
 import Hero from './components/Hero';
 import Navbar from './components/navbar/Navbar';
 import './globals.css';
@@ -25,19 +26,21 @@ export const metadata = {
 	description: 'Gabi Pães e Compania',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
+	const currentUser = await getCurrentUser();
+
 	return (
 		<html lang="en">
-			<body className={gill.className}>
+			<body className={gill.className} suppressHydrationWarning={true}>
 				<div className="w-full h-screen overflow-hidden bg-primary ">
 					<ToasterProvider />
 					<LoginModal />
 					<RegisterModal />
-					<Navbar />
+					<Navbar currentUser={currentUser} />
 					<Hero />
 					{children}
 				</div>

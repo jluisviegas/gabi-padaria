@@ -74,7 +74,7 @@ const Modal: React.FC<ModalProps> = ({
 		 z-50 
 		 flex 
 		 items-center 
-		 justify-center 
+		  justify-center 
 		 overflow-x-hidden
 		 overflow-y-hidden 
 		 bg-neutral-800/70 
@@ -104,7 +104,7 @@ const Modal: React.FC<ModalProps> = ({
 			translate
 			h-full
 			duration-300
-			${showModal ? 'translate-y-0' : 'translate-y-full'}
+			${showModal ? 'translate-x-0' : 'translate-x-full'}
 			${showModal ? 'opacity-100' : 'opacity-0'}
 		 `}
 					>
