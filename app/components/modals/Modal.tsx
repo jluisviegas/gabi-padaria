@@ -74,7 +74,7 @@ const Modal: React.FC<ModalProps> = ({
 		 z-50 
 		 flex 
 		 items-center 
-		  justify-center 
+		 justify-end
 		 overflow-x-hidden
 		 overflow-y-hidden 
 		 bg-neutral-800/70 
@@ -84,18 +84,12 @@ const Modal: React.FC<ModalProps> = ({
 			>
 				<div
 					className="
-		 relative 
-		 mx-auto
-		 my-6
+		 relative
 		 h-full
 		 w-full
-		 sm:h-auto
 		 sm:w-1/2
-		 md:h-auto
-		 md:w-4/6 
-		 lg:h-auto 
-		 lg:w-3/6
-		 xl:w-2/6
+		 md:w-1/3
+	
 		 "
 				>
 					{/*content*/}
@@ -116,14 +110,13 @@ const Modal: React.FC<ModalProps> = ({
 			  h-full
 			  w-full 
 			  flex-col 
-			  
 			  border-0 
 			  bg-primary 
 			  shadow-lg 
 			  outline-none 
 			  focus:outline-none 
-			  md:h-auto 
-			  lg:h-auto
+			
+			
 			"
 						>
 							{/*header*/}
@@ -154,7 +147,7 @@ const Modal: React.FC<ModalProps> = ({
 								<div className="text-lg font-semibold">{title}</div>
 							</div>
 							{/*body*/}
-							<div className="relative flex-auto p-6">{body}</div>
+							<div className="relative p-6">{body}</div>
 							{/*footer*/}
 							<div className="flex flex-col gap-2 p-6">
 								<div
@@ -176,7 +169,7 @@ const Modal: React.FC<ModalProps> = ({
 									)}
 									<Button
 										disabled={disabled}
-										label="Entrar"
+										label="Continuar"
 										onClick={handleSubmit}
 									/>
 								</div>

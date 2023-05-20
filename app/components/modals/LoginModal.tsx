@@ -84,22 +84,20 @@ const LoginModal = () => {
 				outline
 				label="Continuar com Google"
 				icon={FcGoogle}
-				onClick={() => {}}
+				onClick={() => signIn('google')}
 			/>
-			<Button
-				outline
-				label="Continuar com Facebook"
-				icon={BsFacebook}
-				onClick={() => {}}
-			/>
+
 			<div className="mt-4 text-center font-light text-neutral-500">
 				<div className="flex flex-row items-center justify-center gap-2">
-					<div> Já tem uma conta?</div>
+					<div> Não tem uma conta?</div>
 					<div
 						className="cursor-pointer text-accentYellow hover:underline"
-						onClick={registerModal.onClose}
+						onClick={() => {
+							registerModal.onOpen();
+							loginModal.onClose();
+						}}
 					>
-						Entrar
+						Cadastre-se!
 					</div>
 				</div>
 			</div>

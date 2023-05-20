@@ -37,6 +37,7 @@ import logoshape from './logo_shape.png';
 import logo from './logoname.png';
 import menu from './menu.svg';
 import misterb from './misterb.png';
+import desenho from './pao-desenho.svg';
 import pralevar from './pralevar.png';
 import produto1 from './produto-lista1.png';
 import produto2 from './produto-lista2.png';
@@ -47,6 +48,7 @@ import smoke from './smoke.png';
 import toplanches from './toplanches.png';
 
 export {
+	desenho,
 	produto1,
 	produto2,
 	produto3,
