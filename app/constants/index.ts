@@ -115,7 +115,7 @@ export const navLinks = [
 	{
 		id: 'loja',
 		title: 'Loja Online',
-		href: '/produtos',
+		href: '/loja',
 	},
 	{
 		id: 'empresa',

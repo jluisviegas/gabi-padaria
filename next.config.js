@@ -4,7 +4,12 @@ const nextConfig = {
 		appDir: true,
 	},
 	images: {
-		domain: ['lh3.googleusercontent.com'],
+		domain: ['lh3.googleusercontent.com', 'images.unsplash.com'],
+		remotePatterns: [
+			{
+				hostname: 'images.unsplash.com',
+			},
+		],
 	},
 };
 

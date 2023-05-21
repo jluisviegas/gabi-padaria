@@ -40,6 +40,7 @@ import misterb from './misterb.png';
 import desenho from './pao-desenho.svg';
 import pralevar from './pralevar.png';
 import produto1 from './produto-lista1.png';
+import produto1h from './produto-lista1h.jpg';
 import produto2 from './produto-lista2.png';
 import produto3 from './produto-lista3.png';
 import produto4 from './produto-lista4.png';
@@ -49,8 +50,9 @@ import toplanches from './toplanches.png';
 
 export {
 	desenho,
-	produto1,
 	produto2,
+	produto1,
+	produto1h,
 	produto3,
 	produto4,
 	hamburger,

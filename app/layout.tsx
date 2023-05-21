@@ -36,12 +36,11 @@ export default async function RootLayout({
 	return (
 		<html lang="en">
 			<body className={gill.className} suppressHydrationWarning={true}>
-				<div className="w-full h-screen overflow-hidden bg-primary ">
+				<div className="h-screen w-full bg-primary ">
 					<ToasterProvider />
 					<LoginModal />
 					<RegisterModal />
 					<Navbar currentUser={currentUser} />
-					<Hero />
 					{children}
 				</div>
 			</body>
