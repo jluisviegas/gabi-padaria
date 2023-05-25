@@ -22,7 +22,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 	}, []);
 
 	return (
-		<div className=" relative z-20 hidden flex-1 list-none items-center justify-end gap-4  sm:flex sm:flex-col md:flex-row">
+		<div className=" relative z-20 hidden list-none items-center justify-end gap-4  sm:flex sm:flex-col md:flex-row">
 			<div onClick={toggleOpen} className="cursor-pointer uppercase">
 				Minha conta
 			</div>
@@ -39,7 +39,6 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 				 bg-white 
 				 text-sm
 				 font-normal
-				 md:w-1/4
 
 			"
 					initial={{ opacity: 0, scale: 0.5 }}

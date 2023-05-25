@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import Container from '../Container';
+import CartMenu from './CartMenu';
 import UserMenu from './UserMenu';
 
 interface NavBarProps {
@@ -55,16 +56,9 @@ const Navbar: React.FC<NavBarProps> = ({ currentUser }) => {
 						</Link>
 					))}
 				</ul>
-
-				<UserMenu currentUser={currentUser} />
-				<div>
-					{/* <div className="text-xl">
-              <RiShoppingCartLine />
-            </div> */}
-					<div className="group relative -z-20 flex h-8 w-8 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primaryDark text-xs hover:text-white">
-						<span className="absolute left-0 top-0 mb-0 flex h-0 w-full translate-y-0 transform rounded-full bg-accentRed opacity-90 transition-all duration-500 ease-out group-hover:h-full"></span>
-						0
-					</div>
+				<div className="flex gap-4">
+					<UserMenu currentUser={currentUser} />
+					<CartMenu />
 				</div>
 
 				{/* Mobile */}

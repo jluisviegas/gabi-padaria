@@ -79,7 +79,6 @@ const LoginModal = () => {
 
 	const footerContent = (
 		<div className="mt-3 flex flex-col gap-4">
-			<Heading title="Welcome back" subtitle="Login to your account!" />
 			<Button
 				outline
 				label="Continuar com Google"

@@ -4,6 +4,8 @@ import { productsList } from '@/app/constants/index';
 import { produto1h } from '@/public/assets';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import Button from '../components/Button';
+import Categories from '../components/Categories';
 import Container from '../components/Container';
 
 const StoreClient = () => {
@@ -29,6 +31,7 @@ const StoreClient = () => {
 					}}
 					className="top-0"
 				></Image>
+				<Categories />
 			</div>
 			<Container>
 				<p className="mb-8 text-7xl font-semibold uppercase ">
@@ -41,7 +44,7 @@ const StoreClient = () => {
 							className="duration-400 group relative flex flex-1 flex-col justify-center bg-[#dddcdc] font-semibold uppercase transition-all ease-in-out "
 						>
 							<Image
-								src={produto1h}
+								src={product.imgHover}
 								alt="p"
 								className="absolute inset-0 h-full w-full object-cover opacity-0 brightness-75 transition-all duration-300 ease-in-out group-hover:opacity-100 "
 							></Image>
@@ -57,13 +60,13 @@ const StoreClient = () => {
 								<p className="text-sm font-medium tracking-widest group-hover:opacity-0">
 									R$ {product.price}
 								</p>
-
-								<p
-									className="absolute left-1/2 -translate-x-1/2 transform cursor-pointer border-2 border-primary bg-white/40 p-2 px-12 text-darkGray opacity-0 group-hover:opacity-100"
-									onClick={() => router.push('/produto')}
-								>
-									Ver Produto
-								</p>
+								<div className="trasform absolute left-1/2 w-full -translate-x-1/2 px-4 text-sm text-darkGray opacity-0 group-hover:opacity-100">
+									<Button
+										label="Ver Produto"
+										onClick={() => router.push('/produto')}
+										outline
+									></Button>
+								</div>
 							</div>
 						</div>
 					))}

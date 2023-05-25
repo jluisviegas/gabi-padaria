@@ -19,9 +19,13 @@ import {
 	instagram6,
 	lalio,
 	produto1,
+	produto1h,
 	produto2,
+	produto2h,
 	produto3,
+	produto3h,
 	produto4,
+	produto4h,
 	smoke,
 } from '@/public/assets';
 
@@ -36,11 +40,7 @@ export const clients = [
 		img: bulldog,
 		name: 'bulldog burger',
 	},
-	{
-		id: 'casaburger',
-		img: casaburger,
-		name: 'casa burger',
-	},
+
 	{
 		id: 'lalio',
 		img: lalio,
@@ -65,11 +65,6 @@ export const clients = [
 		id: 'cave',
 		img: cave,
 		name: 'Cave Burger',
-	},
-	{
-		id: 'camaradas',
-		img: camaradas,
-		name: 'Camaradas',
 	},
 	{
 		id: 'burgernow',
@@ -156,24 +151,28 @@ export const productsList = [
 	{
 		id: 1,
 		img: produto1,
+		imgHover: produto1h,
 		title: 'Pão de Hamburger',
 		price: '1,20/un',
 	},
 	{
 		id: 2,
 		img: produto2,
+		imgHover: produto2h,
 		title: 'Pão de Hamburger Simples',
 		price: '1,10/un',
 	},
 	{
 		id: 3,
 		img: produto3,
+		imgHover: produto3h,
 		title: 'Pão de Beterraba',
 		price: '1,80/un',
 	},
 	{
 		id: 4,
 		img: produto4,
+		imgHover: produto4h,
 		title: 'Pão de HotDog',
 		price: '1,00/un',
 	},

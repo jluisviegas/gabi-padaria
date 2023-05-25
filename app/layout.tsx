@@ -1,8 +1,9 @@
 import LoginModal from '@/app/components/modals/LoginModal';
 import RegisterModal from '@/app/components/modals/RegisterModal';
+import { Roboto } from 'next/font/google';
 import localFont from 'next/font/local';
 import getCurrentUser from './actions/getCurrentUser';
-import Hero from './components/Hero';
+import Footer from './components/Footer';
 import Navbar from './components/navbar/Navbar';
 import './globals.css';
 import ToasterProvider from './providers/ToasterProvider';
@@ -36,12 +37,13 @@ export default async function RootLayout({
 	return (
 		<html lang="en">
 			<body className={gill.className} suppressHydrationWarning={true}>
-				<div className="h-screen w-full bg-primary ">
+				<div className="min-h-screen w-full bg-primary ">
 					<ToasterProvider />
 					<LoginModal />
 					<RegisterModal />
 					<Navbar currentUser={currentUser} />
 					{children}
+					<Footer />
 				</div>
 			</body>
 		</html>

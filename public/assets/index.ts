@@ -42,8 +42,11 @@ import pralevar from './pralevar.png';
 import produto1 from './produto-lista1.png';
 import produto1h from './produto-lista1h.jpg';
 import produto2 from './produto-lista2.png';
+import produto2h from './produto-lista2h.jpg';
 import produto3 from './produto-lista3.png';
+import produto3h from './produto-lista3h.jpg';
 import produto4 from './produto-lista4.png';
+import produto4h from './produto-lista4h.jpg';
 import rocha from './rocha.png';
 import smoke from './smoke.png';
 import toplanches from './toplanches.png';
@@ -53,6 +56,9 @@ export {
 	produto2,
 	produto1,
 	produto1h,
+	produto2h,
+	produto3h,
+	produto4h,
 	produto3,
 	produto4,
 	hamburger,
