@@ -3,7 +3,6 @@
 import { signIn } from 'next-auth/react';
 import { useState } from 'react';
 import { useForm, type FieldValues, type SubmitHandler } from 'react-hook-form';
-import { BsFacebook } from 'react-icons/bs';
 import { FcGoogle } from 'react-icons/fc';
 
 import useLoginModal from '@/app/hooks/useLoginModal';
@@ -55,7 +54,7 @@ const LoginModal = () => {
 
 	const bodyContent = (
 		<div className="flex flex-col gap-4">
-			<Heading title="Bem vindo à Gabi Pães" subtitle="Faça seu login!" />
+			<Heading title="Gabi Pães" subtitle="Faça seu login!" />
 
 			<Input
 				id="email"
@@ -107,7 +106,7 @@ const LoginModal = () => {
 		<Modal
 			disabled={isLoading}
 			isOpen={loginModal.isOpen}
-			title="Entrar"
+			title=""
 			actionLabel="Continue"
 			onClose={loginModal.onClose}
 			onSubmit={handleSubmit(onSubmit)}

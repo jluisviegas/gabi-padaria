@@ -6,11 +6,19 @@ import SocialMedia from './SocialMedia';
 
 const Footer = () => {
 	return (
-		<footer id="" className="w-full bg-primary">
-			<div className="mx-auto grid grid-rows-3 items-center justify-center gap-y-4 px-6 sm:grid-cols-4 sm:grid-rows-1 sm:px-14">
-				<Image src={logo} alt="Logo" width={150} />
-				<ul className="flex flex-1 list-none flex-col items-center leading-tight tracking-widest sm:items-start">
-					<p className="font-semibold uppercase">Nossos Produtos</p>
+		<footer id="" className="w-full bg-primary pt-8">
+			<div className="mx-auto my-10 h-[1px] w-[80%] bg-gray-300"></div>
+			<div className="mx-auto grid grid-rows-3 items-center gap-y-4 px-6 sm:grid-cols-4 sm:grid-rows-1 sm:px-14 md:justify-between">
+				<Image
+					src={logo}
+					alt="Logo"
+					width={100}
+					style={{
+						margin: 'auto',
+					}}
+				/>
+				<ul className="flex flex-1 list-none flex-col items-center leading-tight tracking-widest">
+					<p className="font-semibold uppercase">Produtos</p>
 					{navProducts.map((type) => (
 						<a
 							href={type.title}
@@ -21,7 +29,7 @@ const Footer = () => {
 						</a>
 					))}
 				</ul>
-				<ul className="flex flex-1 list-none flex-col  items-center uppercase tracking-widest sm:items-start">
+				<ul className="flex flex-1 list-none flex-col items-center uppercase tracking-widest">
 					{navLinks.map((page) => (
 						<a
 							href={page.title}

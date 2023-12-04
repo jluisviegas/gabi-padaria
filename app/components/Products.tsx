@@ -4,32 +4,36 @@ import React from 'react';
 
 const Products = () => {
 	return (
-		<section id="products" className="  flex w-full bg-primary">
+		<section
+			id="products"
+			className="flex w-full flex-col-reverse bg-primary sm:flex-row"
+		>
 			<div className=" grid grid-cols-2 gap-4 md:w-1/2 md:gap-10 ">
 				{productsTypes.map((product) => (
-					<div key={product.id} className="relative h-[350px]  overflow-hidden">
+					<div
+						key={product.id}
+						className="relative h-[275px] overflow-hidden sm:h-[350px]"
+					>
 						<Image
 							src={product.productImg}
 							alt="Produto"
 							className="h-full scale-125 object-cover brightness-75 transition duration-500 hover:scale-105 hover:brightness-50"
 						/>
-						<h2
-							className={`absolute top-10 ml-6 text-[20px] uppercase leading-none tracking-wide text-white md:text-[34px]`}
-						>
+						<h2 className="absolute top-10 ml-6 text-sm uppercase leading-none tracking-wide text-white md:text-[34px]">
 							{product.title}
 						</h2>
 					</div>
 				))}
 			</div>
-			<div className="flex w-1/2 flex-col items-start	justify-end md:flex-row ">
-				<div className=" h-auto md:w-1/2">
-					<h1 className="sticky top-0 text-end text-[36px] font-bold uppercase leading-none tracking-wide text-darkGray md:text-[68px]">
+			<div className="flex w-full flex-col items-center sm:ml-8 sm:w-1/2 md:flex-row md:items-start md:justify-end ">
+				<div className="flex flex-col items-center justify-center">
+					<h1 className="top-0 text-[36px] font-bold uppercase leading-none tracking-wide text-darkGray sm:text-end md:text-[68px]">
 						Nossos <br /> Produtos
 					</h1>
 					<h2 className="sm:text-md mb-6 text-end text-sm font-medium uppercase  tracking-wider text-accentYellow md:text-lg">
 						Conheça nossa linha de produtos
 					</h2>
-					<div className="mt-10 text-end">
+					<div className="text-end sm:mt-10">
 						<button>
 							<a
 								href="#_"

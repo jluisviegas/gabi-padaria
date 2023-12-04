@@ -49,7 +49,7 @@ const RegisterModal = () => {
 
 	const bodyContent = (
 		<div className="flex flex-col gap-4">
-			<Heading title="Bem vindo à Gabi Pães" subtitle="Faça seu cadastro!" />
+			<Heading title="Gabi Pães" subtitle="Faça seu cadastro!" />
 
 			<Input
 				id="email"
@@ -80,7 +80,7 @@ const RegisterModal = () => {
 	);
 
 	const footerContent = (
-		<div className="mt-3 flex flex-col gap-4">
+		<div className=" flex flex-col gap-4">
 			<hr />
 			<Button
 				outline
@@ -110,7 +110,7 @@ const RegisterModal = () => {
 		<Modal
 			disabled={isLoading}
 			isOpen={registerModal.isOpen}
-			title="Cadastrar"
+			title=""
 			actionLabel="Continue"
 			onClose={registerModal.onClose}
 			onSubmit={handleSubmit(onSubmit)}

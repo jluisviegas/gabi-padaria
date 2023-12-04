@@ -119,8 +119,8 @@ export const navLinks = [
 	},
 	{
 		id: 'info',
-		title: 'Info',
-		href: '/info',
+		title: 'Onde estamos',
+		href: '#info',
 	},
 ];
 

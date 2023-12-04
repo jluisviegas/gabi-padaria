@@ -7,24 +7,24 @@ const Hero = () => {
 			id="home"
 			className="relative flex  h-screen max-w-[2520px] justify-center bg-primary px-4 sm:px-2 md:px-10 xl:px-20"
 		>
-			<div className="">
+			<div className="relative top-10">
 				<div className="flex flex-col items-center justify-center gap-10 ">
-					<h2 className="sm:text-md text-sm font-medium uppercase tracking-wider  text-accentYellow md:text-xl">
+					<h2 className="sm:text-md text-sm font-medium uppercase tracking-wider  text-accentYellow md:text-2xl">
 						Bem-vindo à Gabi Pães e Cia
 					</h2>
 
 					<Image
 						src={desenho}
 						alt="desenho"
-						width={400}
-						height={400}
+						width={350}
+						height={350}
 						className="opacity-30"
 					></Image>
 					<div className="flex flex-col items-center justify-center">
-						<h1 className="text-[36px] font-bold uppercase leading-none tracking-widest text-darkGray  md:text-[68px]">
+						<h1 className="text-3xl font-bold uppercase leading-none tracking-widest text-darkGray  sm:text-5xl">
 							Ingrediente especial.
 						</h1>
-						<h1 className="text-[36px] font-bold uppercase leading-none tracking-widest text-darkGray md:text-[68px]">
+						<h1 className="text-3xl font-bold uppercase leading-none tracking-widest text-darkGray sm:text-5xl">
 							Sabor Artesanal.
 						</h1>
 					</div>

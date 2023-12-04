@@ -24,9 +24,6 @@ const Clients = () => {
 									alt="Clientes"
 									className="h-12 w-16 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 sm:h-24 sm:w-32"
 								/>
-								<p className="flex items-center justify-center p-2 text-xs uppercase">
-									{client.name}
-								</p>
 							</div>
 						))}
 					</ul>

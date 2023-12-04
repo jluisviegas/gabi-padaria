@@ -1,7 +1,12 @@
+import Container from '../components/Container';
 import CartClient from './CartClient';
 
 const CartPage = () => {
-	return <CartClient />;
+	return (
+		<Container>
+			<CartClient />
+		</Container>
+	);
 };
 
 export default CartPage;

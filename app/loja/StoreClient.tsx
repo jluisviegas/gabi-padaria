@@ -16,28 +16,13 @@ const StoreClient = () => {
 			<div
 				className=" relative mb-8 flex flex-col 
 			 justify-between bg-primary"
-			>
-				<Image
-					src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
-					alt="padaria"
-					width={0}
-					height={0}
-					sizes="100vw"
-					style={{
-						width: '100%',
-						height: '280px',
-						objectFit: 'cover',
-						opacity: '0.6',
-					}}
-					className="top-0"
-				></Image>
-				<Categories />
-			</div>
+			></div>
 			<Container>
-				<p className="mb-8 text-7xl font-semibold uppercase ">
+				<Categories />
+				<p className="mb-8 text-2xl font-semibold uppercase xs:text-4xl sm:text-7xl ">
 					Nossos Produtos
 				</p>
-				<div className="grid  grid-cols-4 gap-6">
+				<div className="grid  gap-6 xs:grid-cols-2 sm:grid-cols-4">
 					{productsList.map((product) => (
 						<div
 							key={product.id}
@@ -71,7 +56,6 @@ const StoreClient = () => {
 						</div>
 					))}
 				</div>
-				<hr className="border-t-1 my-20 border-gray-300" />
 			</Container>
 		</>
 	);
