@@ -9,6 +9,8 @@ import { User } from '@prisma/client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { FaPhone } from 'react-icons/fa';
+import { IoMailSharp } from 'react-icons/io5';
 import Container from '../Container';
 import CartMenu from './CartMenu';
 import UserMenu from './UserMenu';
@@ -25,13 +27,27 @@ const Navbar: React.FC<NavBarProps> = ({ currentUser }) => {
 
 	const handleMenu = () => {
 		setToggle((prev) => !prev);
-		mobileNav.onOpen();
+		if (toggle) {
+			mobileNav.onClose();
+		} else {
+			mobileNav.onOpen();
+		}
 	};
 
 	return (
-		<Container>
-			<nav className="z-10 flex w-full items-center justify-between py-6">
-				{/* Desktop */}
+		<nav className="z-10 mx-auto items-center bg-darkGray">
+			<div className="flex h-10 justify-end gap-10 bg-primary px-4 md:px-10 xl:px-20">
+				<div className="flex items-center gap-2 text-xs sm:text-sm">
+					<FaPhone />
+					99221-7000 | 99177-9600
+				</div>
+				<div className="flex items-center gap-2 text-sm sm:text-base">
+					<IoMailSharp />
+					gabipaes@gmail.com
+				</div>
+			</div>
+			{/* Desktop */}
+			<div className="mx-auto flex w-full max-w-[2520px] justify-between p-6 px-4 md:px-10 xl:px-20">
 				<ul className="relative flex-1 list-none justify-start uppercase tracking-widest sm:flex sm:items-center sm:gap-3 md:flex-row md:gap-6">
 					<Link href="/">
 						<Image
@@ -46,8 +62,8 @@ const Navbar: React.FC<NavBarProps> = ({ currentUser }) => {
 						<Link
 							href={menu.href}
 							key={menu.id}
-							className="relative hidden cursor-pointer text-xs font-medium text-darkGray transition-all duration-300 before:absolute before:-bottom-2 before:left-0 before:h-[2px] before:w-0	before:bg-accentRed before:opacity-0 before:transition-all before:duration-500 before:content-['']
-							hover:text-accentRed	hover:before:w-full	hover:before:opacity-100 sm:inline-block"
+							className="relative hidden cursor-pointer text-xs font-medium text-primary transition-all duration-300 before:absolute before:-bottom-2 before:left-0 before:h-[2px] before:w-0	before:bg-accentYellow before:opacity-0 before:transition-all before:duration-500 before:content-['']
+							hover:text-accentYellow	hover:before:w-full	hover:before:opacity-100 sm:inline-block"
 						>
 							{menu.title}
 						</Link>
@@ -62,13 +78,13 @@ const Navbar: React.FC<NavBarProps> = ({ currentUser }) => {
 				<div className="z-50 flex flex-1 items-center justify-end transition-transform sm:hidden">
 					<Image
 						src={toggle ? close : menu}
-						alt="menu"
+						alt="menu-mobile"
 						className="h-[32px] w-[32px] object-contain transition-transform"
 						onClick={handleMenu}
 					/>
 				</div>
-			</nav>
-		</Container>
+			</div>
+		</nav>
 	);
 };
 

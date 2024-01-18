@@ -5,6 +5,7 @@ import { AiOutlinePhone } from 'react-icons/ai';
 import { BiTimeFive } from 'react-icons/bi';
 import { roboto } from '../layout';
 import Button from './Button';
+import CircularText from './CircularText';
 
 const CompanyInfo = () => {
 	return (
@@ -13,27 +14,27 @@ const CompanyInfo = () => {
 			<div className="mx-auto my-12 flex h-auto w-full flex-1">
 				{/* Info */}
 				<div className="grid h-auto w-full gap-8 md:grid-cols-2">
-					<div className="flex flex-col justify-between bg-accentRed px-10 py-6">
-						<h1 className="text-2xl font-normal uppercase leading-none tracking-wide text-primary md:text-4xl">
+					<div className="flex flex-col justify-between bg-darkGray px-10 py-6">
+						<h1 className="text-2xl font-normal uppercase leading-none tracking-wide text-primary md:text-5xl">
 							Onde Estamos
 						</h1>
 						<div className="mb-6 mt-2 flex justify-between">
 							<div
-								className={`md:text-md flex flex-col justify-center text-sm text-primary ${roboto.className}`}
+								className={`text-md flex flex-col justify-center text-primary md:text-xl ${roboto.className}`}
 							>
 								<p>R. Santa Catarina, 151.</p>
 								<p>Jardim Eldorado, São Luís - MA</p>
 								<p>CEP: 65066-849</p>
 							</div>
-							<Button title="Mapa" style="text-primary" />
+							{/* <Button title="Mapa" style="text-primary" /> */}
 						</div>
 
 						<div className="mb-6">
-							<h2 className="sm:text-md mb-6 text-sm font-medium uppercase tracking-wider text-primary	md:text-lg">
+							<h2 className="text-md mb-6 font-medium uppercase tracking-wider text-primary sm:text-lg	md:text-lg">
 								Horário de funcionamento <BiTimeFive />
 							</h2>
 							<div className={`flex gap-4 sm:gap-6 ${roboto.className}`}>
-								<div className="md:text-md flex flex-col  justify-center text-sm text-primary">
+								<div className="text-md flex flex-col  justify-center text-primary md:text-xl">
 									<p>Segunda à Domingo</p>
 									<p>07h30 | 18h00</p>
 								</div>
@@ -46,7 +47,7 @@ const CompanyInfo = () => {
 							</h2>
 							<div className="flex gap-4 sm:gap-6">
 								<div
-									className={`md:text-md flex flex-col justify-center text-sm text-primary ${roboto.className}`}
+									className={`text-md flex flex-col justify-center text-primary md:text-xl ${roboto.className}`}
 								>
 									<p>(98) 99177-9600</p>
 									<p>gabipaes-cia@outlook.com</p>
@@ -69,7 +70,7 @@ const CompanyInfo = () => {
 											src={post.img}
 											url={post.url}
 											alt=""
-											className='"w-[240px] h-auto object-cover md:min-h-[200px]'
+											className='" h-auto object-cover md:min-h-[180px]'
 										/>
 									</a>
 								</div>
@@ -78,10 +79,8 @@ const CompanyInfo = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col items-center justify-between gap-4 text-xl uppercase md:flex-row md:text-3xl">
-				<div>delivery em toda São Luis</div>
-				<div>Compra 100% Segura</div>
-				<div>Do forno pra sua mesa</div>
+			<div className="mx-auto flex items-center py-6">
+				<CircularText />
 			</div>
 		</section>
 	);

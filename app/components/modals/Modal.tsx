@@ -47,7 +47,7 @@ const Modal: React.FC<ModalProps> = ({
 	}, [onClose, disabled]);
 
 	const handleSubmit = useCallback(() => {
-		if (disabled) {
+		if (disabled || !onSubmit) {
 			return;
 		}
 
@@ -83,7 +83,7 @@ const Modal: React.FC<ModalProps> = ({
 							{/*header*/}
 							<div className="relative flex items-center justify-center p-7">
 								<button
-									className="absolute left-6 border-0 p-1 transition hover:opacity-70"
+									className="absolute left-6 hidden border-0 p-1 transition hover:opacity-70 sm:block"
 									onClick={handleClose}
 								>
 									<IoMdClose size={18} />
@@ -94,7 +94,7 @@ const Modal: React.FC<ModalProps> = ({
 							<div className="relative p-6">{body}</div>
 							{/*footer*/}
 							<div className="flex flex-col gap-2 p-6">
-								<div className="flex w-full flex-row items-center gap-4">
+								<div className="hidden w-full flex-row items-center gap-4 sm:block">
 									{secondaryAction && secondaryActionLabel && (
 										<Button
 											disabled={disabled}

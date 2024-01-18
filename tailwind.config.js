@@ -13,7 +13,7 @@ module.exports = {
 				secondary: '#A68D67',
 				accentRed: '#B52927',
 				accentYellow: '#D3AC4D',
-				darkGray: '#3A312E',
+				darkGray: '#2A2A2A',
 			},
 			fontFamily: {
 				gill: ['var(--font-gill)'],

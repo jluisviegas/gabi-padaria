@@ -23,7 +23,11 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 
 	return (
 		<div className=" relative z-20 hidden list-none items-center justify-end gap-4  sm:flex sm:flex-col md:flex-row">
-			<div onClick={toggleOpen} className="cursor-pointer text-xs uppercase">
+			<div
+				onClick={toggleOpen}
+				className="relative hidden cursor-pointer text-xs font-medium uppercase text-primary transition-all duration-300 before:absolute before:-bottom-2 before:left-0 before:h-[2px]	before:w-0 before:bg-accentYellow before:opacity-0 before:transition-all before:duration-500
+				before:content-['']	hover:text-accentYellow	hover:before:w-full hover:before:opacity-100 sm:inline-block"
+			>
 				Minha conta
 			</div>
 

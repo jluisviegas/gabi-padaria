@@ -14,7 +14,7 @@ const CartMenu: React.FC<CartProps> = ({ onClick }) => {
 			onClick={onClick}
 		>
 			<div className="flex cursor-pointer items-center justify-center gap-2 text-xl">
-				<RiShoppingCart2Line />
+				<RiShoppingCart2Line className="text-primary" />
 				<div className="flex h-6 w-6 items-center justify-center rounded-full bg-secondary">
 					<p className="text-xs text-primary">0</p>
 				</div>

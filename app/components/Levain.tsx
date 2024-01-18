@@ -2,30 +2,16 @@ import { productsTypes } from '@/app/constants/index';
 import Image from 'next/image';
 import React from 'react';
 
-const Products = () => {
+const Levain = () => {
 	return (
 		<section
 			id="products"
 			className="flex w-full flex-col-reverse bg-primary sm:flex-row"
 		>
-			<div className="grid gap-4 sm:grid-cols-2 md:w-1/2 ">
-				{productsTypes.map((product) => (
-					<div key={product.id} className="relative h-[250px]">
-						<Image
-							src={product.productImg}
-							alt="Produto"
-							className="h-full object-cover brightness-75 transition duration-500 hover:brightness-50"
-						/>
-						<h2 className="absolute top-10 ml-6 text-xl uppercase leading-none tracking-wide text-white md:text-4xl">
-							{product.title}
-						</h2>
-					</div>
-				))}
-			</div>
 			<div className="flex w-full items-center sm:ml-8 sm:w-1/2 md:flex-row md:items-start md:justify-end ">
 				<div className="flex flex-col justify-center">
 					<h1 className="top-0 text-[36px] font-bold uppercase leading-none tracking-wide text-darkGray sm:text-end md:text-[68px]">
-						Nossos <br /> Produtos
+						Produtos <br /> Levain
 					</h1>
 					<h2 className="sm:text-md mb-6 text-end text-sm font-medium uppercase  tracking-wider text-accentYellow md:text-lg">
 						Conheça nossa linha de produtos
@@ -44,10 +30,25 @@ const Products = () => {
 						</button>
 					</div>
 				</div>
-				<hr className="border-t-1 my-20 border-gray-300" />
 			</div>
+			<div className="grid gap-4 sm:grid-cols-2 md:w-1/2 ">
+				{productsTypes.map((product) => (
+					<div key={product.id} className="relative h-[250px]">
+						<Image
+							src={product.productImg}
+							alt="Produto"
+							className="h-full object-cover brightness-75 transition duration-500 hover:brightness-50"
+						/>
+						<h2 className="absolute top-10 ml-6 text-xl uppercase leading-none tracking-wide text-white md:text-4xl">
+							{product.title}
+						</h2>
+					</div>
+				))}
+			</div>
+
+			<hr className="border-t-1 my-20 border-gray-300" />
 		</section>
 	);
 };
 
-export default Products;
+export default Levain;

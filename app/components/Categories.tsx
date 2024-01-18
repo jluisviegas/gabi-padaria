@@ -3,13 +3,10 @@ import React from 'react';
 const Categories = () => {
 	return (
 		<div className="">
-			<ul className="text-md flex flex-col justify-between border-b-[1px] border-gray-400 p-4 font-medium uppercase sm:flex-row sm:text-lg">
-				<div className="flex justify-between">
-					<div className="hidden sm:block">
-						<li>Todos os Produtos</li>
-					</div>
+			<ul className="flex flex-col justify-between text-lg font-medium uppercase sm:text-lg">
+				<div className="flex flex-col justify-between gap-2 text-4xl">
 					<li>Pães</li>
-					<li>Pizza</li>
+					<li>Massa de Pizza</li>
 					<li>Bolos</li>
 					<li>Salgados</li>
 				</div>

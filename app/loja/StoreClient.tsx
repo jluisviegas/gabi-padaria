@@ -1,7 +1,7 @@
 'use client';
 
 import { productsList } from '@/app/constants/index';
-import { produto1h } from '@/public/assets';
+import { nossosprodutos, produto1h } from '@/public/assets';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import Button from '../components/Button';
@@ -13,15 +13,29 @@ const StoreClient = () => {
 
 	return (
 		<>
-			<div
-				className=" relative mb-8 flex flex-col 
-			 justify-between bg-primary"
-			></div>
 			<Container>
-				<Categories />
-				<p className="mb-8 text-2xl font-semibold uppercase xs:text-4xl sm:text-7xl ">
-					Nossos Produtos
-				</p>
+				<div className="mb-6 flex flex-col justify-between py-6 sm:flex-row">
+					<div className="mb-6 flex flex-col">
+						<p className="mb-8 text-4xl font-semibold uppercase  md:text-7xl ">
+							Nossos Produtos
+						</p>
+						<Categories />
+					</div>
+					<div>
+						<Image
+							src={nossosprodutos}
+							alt="Nosso Produtos Gabi"
+							height={650}
+							style={{
+								maxWidth: '100%',
+								height: 'auto',
+								filter: 'brightness(75%)',
+							}}
+						></Image>
+					</div>
+				</div>
+				<div className="mx-auto my-10 h-[1px] w-[80%] bg-gray-300"></div>
+
 				<div className="grid  gap-6 xs:grid-cols-2 sm:grid-cols-4">
 					{productsList.map((product) => (
 						<div

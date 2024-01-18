@@ -9,7 +9,7 @@ const Hero = () => {
 		>
 			<div className="relative top-10">
 				<div className="flex flex-col items-center justify-center gap-10 ">
-					<h2 className="sm:text-md text-sm font-medium uppercase tracking-wider  text-accentYellow md:text-2xl">
+					<h2 className="text-lg font-medium uppercase tracking-wider text-accentYellow  sm:text-xl md:text-3xl">
 						Bem-vindo à Gabi Pães e Cia
 					</h2>
 

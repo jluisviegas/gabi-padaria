@@ -15,8 +15,6 @@ import burgerwars from './burgerwars.png';
 import camaradas from './camaradas.png';
 import casaburger from './casaburger.png';
 import cave from './cave.png';
-import instagram1 from './client_instagram1.jpg';
-import instagram3 from './client_instagram3.jpg';
 import close from './close.svg';
 import collage from './collage.png';
 import descovi from './descovi.png';
@@ -28,15 +26,20 @@ import location from './gabi-location.png';
 import gabimural from './gabimural.jpg';
 import hamburger from './hamburger.jpg';
 import hotdog from './hotdog.jpg';
-import instagram2 from './instagramfeed.jpg';
-import instagram4 from './instagramfeed1.jpg';
-import instagram5 from './instagramfeed2.jpg';
-import instagram6 from './instagramfeed3.jpg';
+import instagram1 from './instagramfeed1.jpg';
+import instagram2 from './instagramfeed2.jpg';
+import instagram3 from './instagramfeed3.jpg';
+import instagram4 from './instagramfeed4.jpg';
+import instagram5 from './instagramfeed5.jpg';
+import instagram6 from './instagramfeed6.jpg';
 import lalio from './lalio.png';
+import logo from './logo_nb1.png';
 import logoshape from './logo_shape.png';
-import logo from './logoname.png';
+import logo_name from './logoname.png';
 import menu from './menu.svg';
 import misterb from './misterb.png';
+import nossahistoria from './nossa_historia.jpg';
+import nossosprodutos from './nossos_produtos.jpg';
 import desenho from './pao-desenho.svg';
 import pralevar from './pralevar.png';
 import produto1 from './produto-lista1.png';
@@ -53,8 +56,7 @@ import sobre from './sobre-empresa.jpg';
 import toplanches from './toplanches.png';
 
 export {
-	about,
-	about1,
+	about, about1,
 	about2,
 	arrow,
 	bburger,
@@ -89,10 +91,11 @@ export {
 	instagram6,
 	lalio,
 	location,
-	logo,
-	logoshape,
+	logo, logo_name, logoshape,
 	menu,
 	misterb,
+	nossahistoria,
+	nossosprodutos,
 	pralevar,
 	produto1,
 	produto1h,
@@ -105,5 +108,6 @@ export {
 	rocha,
 	smoke,
 	sobre,
-	toplanches,
+	toplanches
 };
+

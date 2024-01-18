@@ -2,6 +2,7 @@ import Clients from './components/Clients';
 import CompanyInfo from './components/CompanyInfo';
 import Container from './components/Container';
 import Hero from './components/Hero';
+import Levain from './components/Levain';
 import Products from './components/Products';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
 			<Container>
 				<Hero />
 				<Products />
+				<Levain />
 				<Clients />
 				<CompanyInfo />
 			</Container>
