@@ -7,17 +7,17 @@ const Hero = () => {
 			id="home"
 			className="relative flex  h-screen max-w-[2520px] justify-center bg-primary px-4 sm:px-2 md:px-10 xl:px-20"
 		>
-			<div className="relative top-10">
+			<div className="relative top-20">
 				<div className="flex flex-col items-center justify-center gap-10 ">
-					<h2 className="text-lg font-medium uppercase tracking-wider text-accentYellow  sm:text-xl md:text-3xl">
+					<h2 className="text-lg font-medium uppercase tracking-wider text-accentYellow  sm:text-2xl md:text-4xl">
 						Bem-vindo à Gabi Pães e Cia
 					</h2>
 
 					<Image
 						src={desenho}
 						alt="desenho"
-						width={350}
-						height={350}
+						width={400}
+						height={400}
 						className="opacity-30"
 					></Image>
 					<div className="flex flex-col items-center justify-center">

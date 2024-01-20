@@ -10,27 +10,27 @@ const Products = () => {
 		>
 			<div className="grid gap-4 sm:grid-cols-2 md:w-1/2 ">
 				{productsTypes.map((product) => (
-					<div key={product.id} className="relative h-[250px]">
+					<div key={product.id} className="relative h-[470px]">
 						<Image
 							src={product.productImg}
 							alt="Produto"
 							className="h-full object-cover brightness-75 transition duration-500 hover:brightness-50"
 						/>
-						<h2 className="absolute top-10 ml-6 text-xl uppercase leading-none tracking-wide text-white md:text-4xl">
+						<h2 className="absolute top-8 ml-6 text-3xl font-medium uppercase leading-none tracking-wide text-primary">
 							{product.title}
 						</h2>
 					</div>
 				))}
 			</div>
-			<div className="flex w-full items-center sm:ml-8 sm:w-1/2 md:flex-row md:items-start md:justify-end ">
-				<div className="flex flex-col justify-center">
-					<h1 className="top-0 text-[36px] font-bold uppercase leading-none tracking-wide text-darkGray sm:text-end md:text-[68px]">
+			<div className="flex w-full sm:ml-8 sm:w-1/2 md:flex-row md:items-start md:justify-end">
+				<div className="mb-4 flex flex-col">
+					<h1 className="top-0 text-5xl font-bold uppercase leading-none tracking-wide text-darkGray sm:text-end md:text-7xl">
 						Nossos <br /> Produtos
 					</h1>
-					<h2 className="sm:text-md mb-6 text-end text-sm font-medium uppercase  tracking-wider text-accentYellow md:text-lg">
+					<h2 className="sm:text-md mb-6 text-end text-base font-medium uppercase tracking-wider text-accentYellow md:text-2xl">
 						Conheça nossa linha de produtos
 					</h2>
-					<div className="text-end sm:mt-10">
+					<div className="sm:mt-10 sm:text-end">
 						<button>
 							<a
 								href="#_"

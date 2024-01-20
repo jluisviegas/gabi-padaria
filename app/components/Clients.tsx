@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import Slider from 'react-infinite-logo-slider';
 import { clients } from '../constants';
-import ClientSlider from './ClientSlider';
+import LogoSlider from './LogoSlider';
 
 const Clients = () => {
 	return (
@@ -17,7 +17,9 @@ const Clients = () => {
 						CONHEÇA ALGUNS DE NOSSOS CLIENTES
 					</h2>
 				</div>
-				<div className="flex flex-col">{/* <ClientSlider /> */}</div>
+				<div className="flex flex-col">
+					<LogoSlider />
+				</div>
 			</div>
 			<hr className="border-t-1 my-20 border-gray-300" />
 		</section>
