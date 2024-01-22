@@ -7,9 +7,12 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			fontSize: {
+				clamp: 'clamp(3rem, 7vw, 7rem)',
+			},
 			colors: {
 				primary: '#EBEBEB',
-				primaryDark: '#DDDCDC',
+				primaryDark: '#d6d6d6',
 				secondary: '#A68D67',
 				accentRed: '#B52927',
 				accentYellow: '#D3AC4D',

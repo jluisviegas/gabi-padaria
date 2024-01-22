@@ -15,6 +15,8 @@ import burgerwars from './burgerwars.png';
 import camaradas from './camaradas.png';
 import casaburger from './casaburger.png';
 import cave from './cave.png';
+import cheese_levain from './cheese-levain.jpg';
+import cheese_wine from './cheese-wine.jpg';
 import close from './close.svg';
 import collage from './collage.png';
 import descovi from './descovi.png';
@@ -25,6 +27,7 @@ import first from './first.png';
 import location from './gabi-location.png';
 import gabimural from './gabimural.jpg';
 import hamburger from './hamburger.jpg';
+import hero_image from './hero-image-nb.png';
 import hotdog from './hotdog.jpg';
 import instagram1 from './instagramfeed1.jpg';
 import instagram2 from './instagramfeed2.jpg';
@@ -33,6 +36,7 @@ import instagram4 from './instagramfeed4.jpg';
 import instagram5 from './instagramfeed5.jpg';
 import instagram6 from './instagramfeed6.jpg';
 import lalio from './lalio.png';
+import levain from './levain-bread.jpg';
 import logo from './logo_nb1.png';
 import logoshape from './logo_shape.png';
 import logo_name from './logoname.png';
@@ -52,12 +56,9 @@ import produto4 from './produto-lista4.png';
 import produto4h from './produto-lista4h.jpg';
 import rocha from './rocha.png';
 import smoke from './smoke.png';
-import sobre from './sobre-empresa.jpg';
 import toplanches from './toplanches.png';
 
 export {
-	about, about1,
-	about2,
 	arrow,
 	bburger,
 	blackb,
@@ -71,9 +72,7 @@ export {
 	burgerwars,
 	camaradas,
 	casaburger,
-	cave,
-	close,
-	collage,
+	cave, cheese_wine, close, collage,
 	descovi,
 	desenho,
 	dessert,
@@ -81,16 +80,14 @@ export {
 	fest,
 	first,
 	gabimural,
-	hamburger,
-	hotdog,
+	hamburger, hero_image, hotdog,
 	instagram1,
 	instagram2,
 	instagram3,
 	instagram4,
 	instagram5,
 	instagram6,
-	lalio,
-	location,
+	lalio, levain, location,
 	logo, logo_name, logoshape,
 	menu,
 	misterb,
@@ -106,8 +103,6 @@ export {
 	produto4,
 	produto4h,
 	rocha,
-	smoke,
-	sobre,
-	toplanches
+	smoke, toplanches
 };
 

@@ -10,9 +10,11 @@ export default function Home() {
 		<main className="flex min-h-screen flex-col items-center justify-between overflow-hidden bg-primary">
 			<Container>
 				<Hero />
+			</Container>
+			<Clients />
+			<Container>
 				<Products />
 				<Levain />
-				<Clients />
 				<CompanyInfo />
 			</Container>
 		</main>
