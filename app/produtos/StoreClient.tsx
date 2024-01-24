@@ -16,7 +16,7 @@ const StoreClient = () => {
 			<Container>
 				<div className="mb-6 flex flex-col justify-between py-6 sm:flex-row">
 					<div className="mb-6 flex flex-col">
-						<p className="mb-8 text-4xl font-semibold uppercase  md:text-7xl ">
+						<p className="mb-8 text-5xl font-semibold uppercase  md:text-7xl ">
 							Nossos Produtos
 						</p>
 						<Categories />
@@ -25,7 +25,7 @@ const StoreClient = () => {
 						<Image
 							src={nossosprodutos}
 							alt="Nosso Produtos Gabi"
-							height={650}
+							height={600}
 							style={{
 								maxWidth: '100%',
 								height: 'auto',
@@ -56,9 +56,9 @@ const StoreClient = () => {
 								<p className="text-md tracking-wider group-hover:opacity-0">
 									{product.title}
 								</p>
-								<p className="text-sm font-medium tracking-widest group-hover:opacity-0">
+								{/* <p className="text-sm font-medium tracking-widest group-hover:opacity-0">
 									R$ {product.price}
-								</p>
+								</p> */}
 								<div className="trasform absolute left-1/2 w-full -translate-x-1/2 px-4 text-sm text-darkGray opacity-0 group-hover:opacity-100">
 									<Button
 										label="Ver Produto"

@@ -48,7 +48,7 @@ const Navbar: React.FC<NavBarProps> = ({ currentUser }) => {
 			</div>
 			{/* Desktop */}
 			<div className="mx-auto flex w-full max-w-[2520px] justify-between p-6 px-4 md:px-10 xl:px-20">
-				<ul className="relative flex-1 list-none justify-start uppercase tracking-widest sm:flex sm:items-center sm:gap-3 md:flex-row md:gap-6">
+				<ul className="relative flex-1 list-none justify-start uppercase tracking-widest sm:flex sm:items-center sm:gap-4 md:flex-row md:gap-6">
 					<Link href="/">
 						<Image
 							src={logo}

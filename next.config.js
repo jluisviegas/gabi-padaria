@@ -3,7 +3,7 @@ const nextConfig = {
 	images: {
 		remotePatterns: [
 			{
-				hostname: 'images.unsplash.com',
+				hostname: 'gabipaes.s3.sa-east-1.amazonaws.com',
 			},
 		],
 	},

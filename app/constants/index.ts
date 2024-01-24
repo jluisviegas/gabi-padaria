@@ -5,7 +5,6 @@ import {
 	bunker,
 	burgernow,
 	camaradas,
-	casaburger,
 	cave,
 	dessert,
 	fest,
@@ -18,6 +17,7 @@ import {
 	instagram5,
 	instagram6,
 	lalio,
+	massa_pizza,
 	produto1,
 	produto1h,
 	produto2,
@@ -26,6 +26,7 @@ import {
 	produto3h,
 	produto4,
 	produto4h,
+	salgado_folhado,
 	smoke,
 } from '@/public/assets';
 
@@ -108,14 +109,19 @@ export const instagramFeed = [
 
 export const navLinks = [
 	{
+		id: 'produtos',
+		title: 'Produtos',
+		href: '/produtos',
+	},
+	{
 		id: 'loja',
-		title: 'Loja Online',
+		title: 'Loja Levain',
 		href: '/loja',
 	},
 	{
 		id: 'empresa',
 		title: 'Empresa',
-		href: '/sobre',
+		href: '/empresa',
 	},
 	{
 		id: 'info',
@@ -152,51 +158,105 @@ export const productsList = [
 		id: 1,
 		img: produto1,
 		imgHover: produto1h,
-		title: 'Pão de Hamburger',
+		title: 'Pão de Hamburger Tradicional',
 		price: '1,20/un',
 	},
 	{
 		id: 2,
 		img: produto2,
 		imgHover: produto2h,
-		title: 'Pão de Hamburger Simples',
+		title: 'Pão de Hamburger Brioche',
 		price: '1,10/un',
 	},
 	{
 		id: 3,
-		img: produto3,
-		imgHover: produto3h,
-		title: 'Pão de Beterraba',
-		price: '1,80/un',
+		img: produto2,
+		imgHover: produto2h,
+		title: 'Pão de Hambúrger Gourmet',
+		price: '1,10/un',
 	},
 	{
 		id: 4,
+		img: produto3,
+		imgHover: produto3h,
+		title: 'Pão de Hambúrger de Beterraba',
+		price: '1,80/un',
+	},
+	{
+		id: 5,
+		img: produto3,
+		imgHover: produto3h,
+		title: 'Pão de Hambúrger de Batata',
+		price: '1,80/un',
+	},
+	{
+		id: 6,
+		img: produto3,
+		imgHover: produto3h,
+		title: 'Pão de Hambúrger Australiano',
+		price: '1,80/un',
+	},
+	{
+		id: 7,
+		img: produto3,
+		imgHover: produto3h,
+		title: 'Pão de Hambúrger Australiano Black',
+		price: '1,80/un',
+	},
+	{
+		id: 8,
 		img: produto4,
 		imgHover: produto4h,
 		title: 'Pão de HotDog',
 		price: '1,00/un',
 	},
+	{
+		id: 9,
+		img: produto4,
+		imgHover: produto4h,
+		title: 'Pão de HotDog',
+		price: '1,00/un',
+	},
+	{
+		id: 6,
+		img: produto4,
+		imgHover: produto4h,
+		title: 'Pão de HotDog',
+		price: '1,00/un',
+	},
+	{
+		id: 7,
+		img: produto4,
+		imgHover: produto4h,
+		title: 'Pão de HotDog',
+		price: '1,00/un',
+	},
+
 ];
 
 export const productsTypes = [
 	{
 		id: 'burger',
 		productImg: hamburger,
-		title: 'Hamburger',
+		title: 'Pães',
+		url: 'https://gabipaes.s3.sa-east-1.amazonaws.com/imagens/main/hamburger.jpg'
 	},
 	{
-		id: 'hotdog',
-		productImg: hotdog,
-		title: 'Hotdog',
+		id: 'salgados',
+		productImg: salgado_folhado,
+		title: 'Salgados',
+		url: 'https://gabipaes.s3.sa-east-1.amazonaws.com/imagens/main/hamburger.jpg'
 	},
 	{
-		id: 'cake',
-		productImg: bolomilho,
-		title: 'Bolos',
-	},
-	{
-		id: 'dessert',
+		id: 'bolos',
 		productImg: dessert,
-		title: 'Doces',
+		title: 'Bolos',
+		url: 'https://gabipaes.s3.sa-east-1.amazonaws.com/imagens/main/hamburger.jpg'
+	},
+	{
+		id: 'pizza',
+		productImg: massa_pizza,
+		title: 'Massa de Pizza',
+		url: 'https://gabipaes.s3.sa-east-1.amazonaws.com/imagens/main/hamburger.jpg'
 	},
 ];

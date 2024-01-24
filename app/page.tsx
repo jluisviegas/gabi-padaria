@@ -11,7 +11,7 @@ export default function Home() {
 			<Container>
 				<Hero />
 			</Container>
-			<Clients />
+			{/* <Clients /> */}
 			<Container>
 				<Products />
 				<Levain />

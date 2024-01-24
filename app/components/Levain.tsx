@@ -31,16 +31,26 @@ const Levain = () => {
 					</div>
 				</div>
 				<div className="flex flex-1 flex-col gap-4">
-					<Image
-						src={levain}
-						alt="Levain"
-						className="col-start-1 col-end-3 w-full object-cover brightness-75 transition duration-500 hover:brightness-50"
-					></Image>
-					<Image
-						src={cheese_wine}
-						alt="Levain"
-						className="object-cover brightness-75 transition duration-500 hover:brightness-50"
-					></Image>
+					<div className="relative">
+						<Image
+							src={levain}
+							alt="Levain"
+							className="col-start-1 col-end-3 w-full object-cover brightness-75 transition duration-500 hover:brightness-50"
+						></Image>
+						<h2 className="absolute top-8 ml-6 text-3xl font-medium uppercase leading-none tracking-wide text-primary">
+							Levain
+						</h2>
+					</div>
+					<div className="relative">
+						<Image
+							src={cheese_wine}
+							alt="Levain"
+							className="object-cover brightness-75 transition duration-500 hover:brightness-50"
+						></Image>
+						<h2 className="absolute top-8 ml-6 text-3xl font-medium uppercase leading-none tracking-wide text-primary">
+							Queijos e Vinhos
+						</h2>
+					</div>
 				</div>
 			</div>
 			<hr className="border-t-1 my-20 border-gray-300" />

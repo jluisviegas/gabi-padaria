@@ -2,7 +2,7 @@
 
 import useCartModal from '@/app/hooks/useCartModal';
 import useRegisterModal from '@/app/hooks/useRegisterModal';
-import ProductClient from '@/app/produto/ProductClient';
+import ProductClient from '@/app/produtos/produtossingle/ProductClient';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Button from '../Button';

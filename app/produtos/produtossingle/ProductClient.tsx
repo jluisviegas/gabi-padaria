@@ -4,7 +4,7 @@ import { produto1 } from '@/public/assets';
 import Image from 'next/image';
 import { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
-import Button from '../components/Button';
+import Button from '../../components/Button';
 
 const ProductClient = () => {
 	const [quantity, setQuantity] = useState(1);

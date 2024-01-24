@@ -6,7 +6,7 @@ import LogoSlider from './LogoSlider';
 
 const Clients = () => {
 	return (
-		<section className="w-full bg-primaryDark">
+		<section className="min-h-fit w-full bg-primaryDark">
 			<hr className="border-t-1 my-20 border-gray-300" />
 			<div className=" m-auto my-16 flex flex-col items-center justify-center sm:space-x-12">
 				<div className="mb-12 flex flex-col items-center">
@@ -21,7 +21,7 @@ const Clients = () => {
 					<LogoSlider />
 				</div>
 			</div>
-			<hr className="border-t-1 my-20 border-gray-300" />
+			<hr className="border-t-1 my-20 border-gray-900" />
 		</section>
 	);
 };

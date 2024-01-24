@@ -1,11 +1,7 @@
-import about from './about.jpg';
-import about1 from './about1.jpg';
-import about2 from './about2.jpg';
-import arrow from './arrow.png';
+
 import bburger from './bburger.png';
 import blackb from './blackb.png';
 import bolomilho from './bolomilho.jpg';
-import bread from './breads-home.png';
 import broca from './broca.png';
 import bulldog from './bulldog.png';
 import bunker from './bunker.png';
@@ -15,17 +11,13 @@ import burgerwars from './burgerwars.png';
 import camaradas from './camaradas.png';
 import casaburger from './casaburger.png';
 import cave from './cave.png';
-import cheese_levain from './cheese-levain.jpg';
 import cheese_wine from './cheese-wine.jpg';
 import close from './close.svg';
 import collage from './collage.png';
 import descovi from './descovi.png';
 import dessert from './dessert.jpg';
-import drawn from './drawn.jpg';
 import fest from './fest.png';
 import first from './first.png';
-import location from './gabi-location.png';
-import gabimural from './gabimural.jpg';
 import hamburger from './hamburger.jpg';
 import hero_image from './hero-image-nb.png';
 import hotdog from './hotdog.jpg';
@@ -37,9 +29,10 @@ import instagram5 from './instagramfeed5.jpg';
 import instagram6 from './instagramfeed6.jpg';
 import lalio from './lalio.png';
 import levain from './levain-bread.jpg';
-import logo from './logo_nb1.png';
-import logoshape from './logo_shape.png';
-import logo_name from './logoname.png';
+import logo_name from './logo_name_only.png';
+import logo from './logo_nb_white.png';
+import logoshape from './logo_shape_only.png';
+import massa_pizza from './massa_pizza.jpg';
 import menu from './menu.svg';
 import misterb from './misterb.png';
 import nossahistoria from './nossa_historia.jpg';
@@ -55,15 +48,14 @@ import produto3h from './produto-lista3h.jpg';
 import produto4 from './produto-lista4.png';
 import produto4h from './produto-lista4h.jpg';
 import rocha from './rocha.png';
+import salgado_folhado from './salgado_folhado.jpg';
 import smoke from './smoke.png';
 import toplanches from './toplanches.png';
 
 export {
-	arrow,
 	bburger,
 	blackb,
 	bolomilho,
-	bread,
 	broca,
 	bulldog,
 	bunker,
@@ -76,10 +68,8 @@ export {
 	descovi,
 	desenho,
 	dessert,
-	drawn,
 	fest,
 	first,
-	gabimural,
 	hamburger, hero_image, hotdog,
 	instagram1,
 	instagram2,
@@ -87,9 +77,8 @@ export {
 	instagram4,
 	instagram5,
 	instagram6,
-	lalio, levain, location,
-	logo, logo_name, logoshape,
-	menu,
+	lalio, levain,
+	logo, logo_name, logoshape, massa_pizza, menu,
 	misterb,
 	nossahistoria,
 	nossosprodutos,
@@ -102,7 +91,6 @@ export {
 	produto3h,
 	produto4,
 	produto4h,
-	rocha,
-	smoke, toplanches
+	rocha, salgado_folhado, smoke, toplanches
 };
 

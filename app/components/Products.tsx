@@ -12,9 +12,11 @@ const Products = () => {
 				{productsTypes.map((product) => (
 					<div key={product.id} className="relative h-[470px]">
 						<Image
-							src={product.productImg}
+							src={product.url}
 							alt="Produto"
-							className="h-full object-cover brightness-75 transition duration-500 hover:brightness-50"
+							className="h-full w-full object-cover brightness-75 transition duration-500 hover:brightness-50"
+							height={450}
+							width={400}
 						/>
 						<h2 className="absolute top-8 ml-6 text-3xl font-medium uppercase leading-none tracking-wide text-primary">
 							{product.title}
@@ -33,7 +35,7 @@ const Products = () => {
 					<div className="sm:mt-10 sm:text-end">
 						<button>
 							<a
-								href="#_"
+								href="/produtos"
 								className="text-grayIsh group relative inline-block overflow-hidden border border-darkGray bg-transparent px-5 py-2.5 font-semibold uppercase hover:border-accentRed"
 							>
 								<span className="absolute left-0 top-0 mb-0 flex h-0 w-full translate-y-0 transform bg-accentRed opacity-90 transition-all duration-500 ease-out group-hover:h-full"></span>
