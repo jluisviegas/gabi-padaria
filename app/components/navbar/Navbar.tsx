@@ -36,7 +36,7 @@ const Navbar: React.FC<NavBarProps> = ({ currentUser }) => {
 
 	return (
 		<nav className="z-10 mx-auto items-center bg-darkGray">
-			<div className="flex h-10 justify-end gap-10 bg-primary px-4 md:px-10 xl:px-20">
+			{/* <div className="flex h-10 justify-end gap-10 bg-primary px-4 md:px-10 xl:px-20">
 				<div className="flex items-center gap-2 text-xs sm:text-sm">
 					<FaPhone />
 					99221-7000 | 99177-9600
@@ -45,7 +45,7 @@ const Navbar: React.FC<NavBarProps> = ({ currentUser }) => {
 					<IoMailSharp />
 					gabipaes@gmail.com
 				</div>
-			</div>
+			</div> */}
 			{/* Desktop */}
 			<div className="mx-auto flex w-full max-w-[2520px] justify-between p-6 px-4 md:px-10 xl:px-20">
 				<ul className="relative flex-1 list-none justify-start uppercase tracking-widest sm:flex sm:items-center sm:gap-4 md:flex-row md:gap-6">
@@ -62,7 +62,7 @@ const Navbar: React.FC<NavBarProps> = ({ currentUser }) => {
 						<Link
 							href={menu.href}
 							key={menu.id}
-							className="relative hidden cursor-pointer text-xs font-medium text-primary transition-all duration-300 before:absolute before:-bottom-2 before:left-0 before:h-[2px] before:w-0	before:bg-accentYellow before:opacity-0 before:transition-all before:duration-500 before:content-['']
+							className="relative hidden cursor-pointer text-xs font-medium text-primary transition-all duration-300 before:absolute before:-bottom-2 before:left-0 before:h-[2px] before:w-0	before:bg-accentYellow before:opacity-0 before:transition-all before:content-[''] before:duration-500
 							hover:text-accentYellow	hover:before:w-full	hover:before:opacity-100 sm:inline-block"
 						>
 							{menu.title}

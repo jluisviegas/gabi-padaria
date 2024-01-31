@@ -1,6 +1,7 @@
 import { cheese_wine, levain } from '@/public/assets';
 import Image from 'next/image';
 import React from 'react';
+import { Button } from './ui/button';
 
 const Levain = () => {
 	return (
@@ -16,17 +17,9 @@ const Levain = () => {
 							Linha de Produtos com Fermentação Prolongada
 						</h2>
 						<div className="sm:mt-10">
-							<button>
-								<a
-									href="#_"
-									className="text-grayIsh group relative inline-block overflow-hidden border border-darkGray bg-transparent px-5 py-2.5 font-semibold uppercase hover:border-accentRed"
-								>
-									<span className="absolute left-0 top-0 mb-0 flex h-0 w-full translate-y-0 transform bg-accentRed opacity-90 transition-all duration-500 ease-out group-hover:h-full"></span>
-									<span className="relative group-hover:text-white">
-										Ver todos
-									</span>
-								</a>
-							</button>
+							<Button variant="outline" size="lg">
+								Ver Todos
+							</Button>
 						</div>
 					</div>
 				</div>

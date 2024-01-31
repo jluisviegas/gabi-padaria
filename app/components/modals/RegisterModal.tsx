@@ -9,9 +9,9 @@ import useLoginModal from '@/app/hooks/useLoginModal';
 import useRegisterModal from '@/app/hooks/useRegisterModal';
 import { signIn } from 'next-auth/react';
 import { toast } from 'react-hot-toast';
-import Button from '../Button';
 import Heading from '../Heading';
 import Input from '../inputs/Input';
+import { Button } from '../ui/button';
 import Modal from './Modal';
 
 const RegisterModal = () => {
@@ -83,11 +83,13 @@ const RegisterModal = () => {
 		<div className=" flex flex-col gap-4">
 			<hr />
 			<Button
-				outline
-				label="Continuar com Google"
-				icon={FcGoogle}
+				variant="outline"
+				className="flex gap-2"
 				onClick={() => signIn('google')}
-			/>
+				size="lg"
+			>
+				<FcGoogle /> Continuar com Google
+			</Button>
 
 			<div className="mt-4 text-center font-light text-neutral-500">
 				<div className="flex flex-row items-center justify-center gap-2">

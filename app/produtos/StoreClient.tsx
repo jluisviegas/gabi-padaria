@@ -56,10 +56,8 @@ const StoreClient = () => {
 								<p className="text-md tracking-wider group-hover:opacity-0">
 									{product.title}
 								</p>
-								{/* <p className="text-sm font-medium tracking-widest group-hover:opacity-0">
-									R$ {product.price}
-								</p> */}
-								<div className="trasform absolute left-1/2 w-full -translate-x-1/2 px-4 text-sm text-darkGray opacity-0 group-hover:opacity-100">
+
+								<div className="trasform absolute left-1/2 w-full -translate-x-1/2 px-2 text-sm text-darkGray opacity-0 group-hover:opacity-100">
 									<Button
 										label="Ver Produto"
 										onClick={() => router.push('/produto')}

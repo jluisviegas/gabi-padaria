@@ -126,7 +126,7 @@ export const navLinks = [
 	{
 		id: 'info',
 		title: 'Onde estamos',
-		href: '#info',
+		href: '/#info',
 	},
 ];
 
@@ -245,18 +245,18 @@ export const productsTypes = [
 		id: 'salgados',
 		productImg: salgado_folhado,
 		title: 'Salgados',
-		url: 'https://gabipaes.s3.sa-east-1.amazonaws.com/imagens/main/hamburger.jpg'
+		url: 'https://gabipaes.s3.sa-east-1.amazonaws.com/imagens/main/salgado_folhado.jpg'
 	},
 	{
 		id: 'bolos',
 		productImg: dessert,
 		title: 'Bolos',
-		url: 'https://gabipaes.s3.sa-east-1.amazonaws.com/imagens/main/hamburger.jpg'
+		url: 'https://gabipaes.s3.sa-east-1.amazonaws.com/imagens/main/mini_bolo.jpg'
 	},
 	{
 		id: 'pizza',
 		productImg: massa_pizza,
 		title: 'Massa de Pizza',
-		url: 'https://gabipaes.s3.sa-east-1.amazonaws.com/imagens/main/hamburger.jpg'
+		url: 'https://gabipaes.s3.sa-east-1.amazonaws.com/imagens/main/massa_pizza.jpg'
 	},
 ];

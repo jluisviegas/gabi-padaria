@@ -4,13 +4,11 @@ import Image from 'next/image';
 import { AiOutlinePhone } from 'react-icons/ai';
 import { BiTimeFive } from 'react-icons/bi';
 import { roboto } from '../layout';
-import Button from './Button';
 import CircularText from './CircularText';
 
 const CompanyInfo = () => {
 	return (
 		<section id="info" className="relative min-h-screen">
-			{/* <hr className="border-t-2 border-gray-300 w-full" /> */}
 			<div className="mx-auto my-12 flex h-auto w-full flex-1">
 				{/* Info */}
 				<div className="grid h-auto w-full gap-8 md:grid-cols-2">
@@ -20,13 +18,12 @@ const CompanyInfo = () => {
 						</h1>
 						<div className="mb-6 mt-2 flex justify-between">
 							<div
-								className={`text-md flex flex-col justify-center text-primary md:text-xl ${roboto.className}`}
+								className={`text-md flex flex-col justify-center text-primary md:text-lg ${roboto.className}`}
 							>
 								<p>R. Santa Catarina, 151.</p>
 								<p>Jardim Eldorado, São Luís - MA</p>
 								<p>CEP: 65066-849</p>
 							</div>
-							{/* <Button title="Mapa" style="text-primary" /> */}
 						</div>
 
 						<div className="mb-6">
@@ -34,7 +31,7 @@ const CompanyInfo = () => {
 								Horário de funcionamento <BiTimeFive />
 							</h2>
 							<div className={`flex gap-4 sm:gap-6 ${roboto.className}`}>
-								<div className="text-md flex flex-col  justify-center text-primary md:text-xl">
+								<div className="text-md flex flex-col  justify-center text-primary md:text-lg">
 									<p>Segunda à Domingo</p>
 									<p>07h30 | 18h00</p>
 								</div>
@@ -47,7 +44,7 @@ const CompanyInfo = () => {
 							</h2>
 							<div className="flex gap-4 sm:gap-6">
 								<div
-									className={`text-md flex flex-col justify-center text-primary md:text-xl ${roboto.className}`}
+									className={`text-md flex flex-col justify-center text-primary md:text-lg ${roboto.className}`}
 								>
 									<p>(98) 99177-9600</p>
 									<p>gabipaes-cia@outlook.com</p>
@@ -58,7 +55,14 @@ const CompanyInfo = () => {
 
 					{/* Instagram Feed */}
 					<div className="w-full">
-						<h1 className={styles.heading3}>instagram @gabipaesecia_</h1>
+						<h1 className={styles.heading3}>
+							<a
+								href="https://www.instagram.com/gabipaesecia_/"
+								className="hover:text-accentRed"
+							>
+								instagram @gabipaesecia_
+							</a>
+						</h1>
 						<div className="mt-4 grid grid-cols-3 gap-2 sm:gap-4">
 							{instagramFeed.map((post) => (
 								<div
@@ -68,9 +72,10 @@ const CompanyInfo = () => {
 									<a href={post.url} target="_blank">
 										<Image
 											src={post.img}
-											url={post.url}
 											alt=""
-											className='" h-auto object-cover md:min-h-[180px]'
+											width={300}
+											height={300}
+											className="h-auto w-full object-cover md:min-h-[190px]"
 										/>
 									</a>
 								</div>
@@ -79,9 +84,9 @@ const CompanyInfo = () => {
 					</div>
 				</div>
 			</div>
-			<div className="mx-auto flex items-center py-6">
+			{/* <div className="mx-auto flex items-center py-6">
 				<CircularText />
-			</div>
+			</div> */}
 		</section>
 	);
 };
